@@ -6,15 +6,15 @@ eureka:
       defaultZone: http://localhost:8761/eureka
 spring:
   datasource:
-    driver-class-name: com.mysql.jdbc.Driver
+    driverClassName: com.mysql.jdbc.Driver
+    password: root
     url: jdbc:mysql://localhost:3306/book3?serverTimezone=Hongkong&useUnicode=true&characterEncoding=utf-8
     username: root
-    password: root
   application:
     name: springcloud-server
   data:
     mongodb:
-     uri: mongodb://localhost:27017/1808b
+      uri: mongodb://localhost:27017/1808b
 
   redis:
     database: 0
